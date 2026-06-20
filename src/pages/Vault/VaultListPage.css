@@ -1,0 +1,251 @@
+/* ============================================
+   VAULT LIST PAGE - Premium Glassmorphism
+   ============================================ */
+
+.vault-page {
+  --background: transparent;
+}
+
+.vault-toolbar {
+  --background: transparent;
+  --color: #e8ecf2;
+  padding: 8px 4px;
+}
+
+.vault-title {
+  font-weight: 900 !important;
+  font-size: 1.5rem !important;
+  letter-spacing: -0.5px !important;
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vault-gen-btn {
+  font-weight: 700 !important;
+  --color: #60a5fa !important;
+  transition: all 0.2s ease;
+}
+
+.vault-gen-btn:hover {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 8px rgba(96, 165, 250, 0.3));
+}
+
+.vault-content {
+  --background: transparent;
+}
+
+.vault-container {
+  padding: 16px;
+}
+
+/* Dashboard de Saúde */
+.health-dashboard-card {
+  background: radial-gradient(circle at 50% 0%, rgba(30, 41, 73, 0.7) 0%, rgba(13, 18, 36, 0.9) 100%) !important;
+  border: 1px solid rgba(74, 158, 255, 0.15) !important;
+  border-radius: 24px !important;
+  margin: 0 0 24px 0 !important;
+  box-shadow: 0 12px 36px 0 rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.health-header-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.health-header-row span {
+  color: #f1f5f9;
+  font-weight: 800;
+  font-size: 1.05rem;
+  letter-spacing: -0.2px;
+}
+
+.health-stat-col {
+  text-align: center;
+}
+
+.health-stat-col.middle-col {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.health-stat-val {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.health-stat-val.total {
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.health-stat-val.weak {
+  color: #ef4444;
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.2);
+}
+
+.health-stat-val.reused {
+  color: #f59e0b;
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.2);
+}
+
+.health-stat-label {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: 6px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+/* Barra de Busca */
+.vault-searchbar {
+  --background: rgba(15, 22, 42, 0.55) !important;
+  --color: #f8fafc !important;
+  --placeholder-color: #64748b !important;
+  --icon-color: #64748b !important;
+  --border-radius: 16px !important;
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.25s ease !important;
+}
+
+.vault-searchbar:focus-within {
+  border-color: rgba(59, 130, 246, 0.4) !important;
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* Items do Cofre */
+.vault-item-sliding {
+  margin-bottom: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.vault-item-card {
+  --background: rgba(15, 22, 42, 0.6) !important;
+  --border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  margin: 0 !important;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+}
+
+.vault-item-card:hover {
+  transform: translateY(-2px);
+  --background: rgba(22, 30, 59, 0.75) !important;
+  border-color: rgba(59, 130, 246, 0.25) !important;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.1) !important;
+}
+
+.vault-favicon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.vault-default-icon {
+  color: #3b82f6;
+  font-size: 20px;
+  background: rgba(59, 130, 246, 0.12);
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.vault-item-title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vault-item-title {
+  color: #f1f5f9;
+  font-size: 1.05rem;
+  font-weight: 750;
+  margin: 0;
+  letter-spacing: -0.2px;
+}
+
+.vault-item-badge-weak {
+  font-size: 0.65rem !important;
+  padding: 4px 8px !important;
+  border-radius: 6px !important;
+  font-weight: 700 !important;
+  background: rgba(239, 68, 68, 0.12) !important;
+  color: #fca5a5 !important;
+  border: 1px solid rgba(239, 68, 68, 0.2) !important;
+}
+
+.vault-item-username {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin: 4px 0 0 0;
+  font-weight: 500;
+}
+
+.vault-item-copy-btn {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  transition: all 0.2s ease;
+}
+
+.vault-item-copy-btn:hover {
+  transform: scale(1.1);
+  --color: #3b82f6 !important;
+}
+
+/* Estado vazio */
+.vault-empty-state {
+  text-align: center;
+  padding: 64px 24px;
+  background: rgba(15, 22, 42, 0.45);
+  border-radius: 24px;
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.vault-empty-icon {
+  font-size: 52px;
+  color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
+}
+
+.vault-empty-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #f1f5f9;
+  margin-bottom: 6px;
+}
+
+.vault-empty-desc {
+  font-size: 0.88rem;
+  color: #94a3b8;
+  line-height: 1.5;
+}
+
+/* FAB Button */
+.vault-fab {
+  margin: 18px;
+}
+
+.vault-fab-btn {
+  --background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.4) !important;
+  transition: all 0.25s ease !important;
+}
+
+.vault-fab-btn:hover {
+  transform: scale(1.08) rotate(90deg);
+  box-shadow: 0 12px 32px rgba(59, 130, 246, 0.65) !important;
+}

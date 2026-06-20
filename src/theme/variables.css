@@ -1,0 +1,280 @@
+/* For information on how to create your own theme, please refer to:
+http://ionicframework.com/docs/theming/ */
+
+/* ============================================
+   TEMA GLOBAL - Cofre de Segurança
+   Design Premium Dark com textos legíveis
+   ============================================ */
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Cores Primárias */
+  --ion-color-primary: #4a9eff;
+  --ion-color-primary-rgb: 74, 158, 255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-shade: #3a8ae0;
+  --ion-color-primary-tint: #5ca8ff;
+
+  --ion-color-secondary: #7c5cff;
+  --ion-color-secondary-rgb: 124, 92, 255;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-shade: #6d51e0;
+  --ion-color-secondary-tint: #896cff;
+
+  --ion-color-success: #34d399;
+  --ion-color-success-rgb: 52, 211, 153;
+  --ion-color-success-contrast: #000000;
+  --ion-color-success-shade: #2eba87;
+  --ion-color-success-tint: #48d7a3;
+
+  --ion-color-warning: #fbbf24;
+  --ion-color-warning-rgb: 251, 191, 36;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-shade: #dda820;
+  --ion-color-warning-tint: #fbc53a;
+
+  --ion-color-danger: #f87171;
+  --ion-color-danger-rgb: 248, 113, 113;
+  --ion-color-danger-contrast: #000000;
+  --ion-color-danger-shade: #da6363;
+  --ion-color-danger-tint: #f97f7f;
+
+  --ion-color-medium: #b0b8c9;
+  --ion-color-medium-rgb: 176, 184, 201;
+  --ion-color-medium-contrast: #000000;
+  --ion-color-medium-shade: #9ba2b1;
+  --ion-color-medium-tint: #b8bfce;
+
+  --ion-color-light: #e8ecf2;
+  --ion-color-light-rgb: 232, 236, 242;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-shade: #ccd0d5;
+  --ion-color-light-tint: #eaeef3;
+
+  /* Fundo do App */
+  --ion-background-color: #0b0f1a;
+  --ion-background-color-rgb: 11, 15, 26;
+
+  /* Textos padrão legíveis */
+  --ion-text-color: #e8ecf2;
+  --ion-text-color-rgb: 232, 236, 242;
+
+  /* Cards */
+  --ion-card-background: rgba(20, 28, 45, 0.85);
+
+  /* Items */
+  --ion-item-background: transparent;
+
+  /* Toolbar */
+  --ion-toolbar-background: #0b0f1a;
+  --ion-toolbar-color: #e8ecf2;
+
+  /* Tab Bar */
+  --ion-tab-bar-background: #0c1020;
+  --ion-tab-bar-color: #7b8499;
+  --ion-tab-bar-color-selected: #4a9eff;
+
+  /* Fonte padrão */
+  --ion-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ============================================
+   OVERRIDES GLOBAIS PARA LEGIBILIDADE
+   ============================================ */
+
+ion-content {
+  --background: radial-gradient(circle at 50% 0%, #12192e 0%, #060812 100%);
+  color: #e8ecf2;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --color: #e8ecf2;
+}
+
+ion-title {
+  color: #e8ecf2;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+ion-card {
+  --background: rgba(20, 28, 45, 0.85);
+  color: #e8ecf2;
+}
+
+ion-card-title {
+  color: #e8ecf2 !important;
+}
+
+ion-card-header {
+  color: #e8ecf2;
+}
+
+ion-card-content {
+  color: #cbd5e1;
+}
+
+ion-label {
+  color: #e8ecf2 !important;
+}
+
+ion-label p {
+  color: #94a3b8 !important;
+}
+
+ion-item {
+  --color: #e8ecf2;
+}
+
+ion-input {
+  --color: #e8ecf2 !important;
+  --placeholder-color: #64748b !important;
+}
+
+ion-textarea {
+  --color: #e8ecf2 !important;
+  --placeholder-color: #64748b !important;
+}
+
+ion-searchbar {
+  --color: #e8ecf2 !important;
+  --placeholder-color: #64748b !important;
+}
+
+ion-segment-button {
+  --color: #94a3b8;
+  --color-checked: #ffffff;
+}
+
+/* ============================================
+   ANIMAÇÕES GLOBAIS
+   ============================================ */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200px 0; }
+  100% { background-position: 200px 0; }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(74, 158, 255, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(74, 158, 255, 0.5); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
+
+.pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* ============================================
+   SCROLLBAR CUSTOMIZADA
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(74, 158, 255, 0.25);
+  border-radius: 4px;
+}
+
+/* ============================================
+   DESIGN SYSTEM PREMIUM (GLASSMORPHISM & CYBER)
+   ============================================ */
+
+.glass-card {
+  background: rgba(13, 18, 36, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-3px);
+  border-color: rgba(74, 158, 255, 0.25) !important;
+  box-shadow: 0 12px 40px 0 rgba(74, 158, 255, 0.15) !important;
+}
+
+.glass-input {
+  --background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 14px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.glass-input:focus-within {
+  border-color: rgba(74, 158, 255, 0.4) !important;
+  box-shadow: 0 0 15px rgba(74, 158, 255, 0.15) !important;
+}
+
+.cyber-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.cyber-btn {
+  --border-radius: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.3px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.cyber-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-title-primary {
+  background: linear-gradient(135deg, #60a5fa 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-title-success {
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-title-warning {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

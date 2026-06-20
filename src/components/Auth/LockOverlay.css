@@ -1,0 +1,185 @@
+.lock-overlay-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: linear-gradient(135deg, #090d16 0%, #111827 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 24px;
+  color: #f3f4f6;
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+.lock-overlay-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.lock-icon-main {
+  font-size: 54px;
+  color: #3b82f6;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.4));
+}
+
+.lock-overlay-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.5px;
+}
+
+.lock-overlay-header p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 0;
+  max-width: 280px;
+  line-height: 1.4;
+}
+
+/* Indicador de PIN (bolinhas) */
+.pin-indicator-container {
+  display: flex;
+  gap: 16px;
+  margin: 30px 0;
+}
+
+.pin-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #4b5563;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pin-dot.filled {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+  transform: scale(1.15);
+}
+
+.pin-dot.error {
+  border-color: #ef4444;
+  background-color: #ef4444;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+.lock-error-container {
+  min-height: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lock-error-container p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.lockout-timer-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lockout-timer-container p {
+  font-size: 13px;
+  color: #ef4444;
+  margin: 0;
+}
+
+.lockout-timer-container h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ef4444;
+  margin: 5px 0 0 0;
+  letter-spacing: 1px;
+}
+
+.lock-spinner {
+  margin-bottom: 15px;
+}
+
+/* Teclado Numérico Customizado */
+.numeric-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 24px;
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+
+.keypad-button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f3f4f6;
+  font-size: 28px;
+  font-weight: 500;
+  height: 68px;
+  width: 68px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.1s ease;
+  backdrop-filter: blur(10px);
+}
+
+.keypad-button:active {
+  background: rgba(59, 130, 246, 0.25);
+  border-color: #3b82f6;
+  transform: scale(0.92);
+}
+
+.keypad-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.keypad-button.functional-key {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #9ca3af;
+}
+
+.keypad-button.functional-key:active {
+  color: #3b82f6;
+  transform: scale(0.92);
+}
+
+.lock-overlay-footer {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Animações Modernas */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.85; }
+}
+
+.pulse {
+  animation: pulse 2.5s infinite ease-in-out;
+}

@@ -1,0 +1,248 @@
+/* ============================================
+   SETTINGS PAGE - Advanced Preferences & Data Management
+   ============================================ */
+
+.settings-page {
+  --background: transparent;
+}
+
+.settings-toolbar {
+  --background: transparent;
+  --color: #e8ecf2;
+}
+
+.settings-title {
+  font-weight: 900 !important;
+  font-size: 1.4rem !important;
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.settings-content {
+  --background: transparent;
+}
+
+.settings-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Glassmorphism settings card */
+.settings-card {
+  background: rgba(13, 18, 36, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 24px !important;
+  margin: 0 !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.settings-card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-card-title {
+  color: #f1f5f9 !important;
+  font-size: 1.15rem !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.3px;
+}
+
+.settings-card-desc {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.55;
+}
+
+.settings-btn-primary {
+  margin: 0 0 16px 0;
+  --background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+  --border-radius: 14px !important;
+  font-weight: 750 !important;
+  height: 48px;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.25);
+  transition: all 0.25s ease;
+}
+
+.settings-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45);
+}
+
+.settings-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 20px 0;
+}
+
+.settings-sub-title {
+  color: #f1f5f9;
+  margin: 0 0 12px 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+}
+
+/* File selector */
+.file-picker-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.file-picker-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+}
+
+.file-picker-btn {
+  margin: 0;
+  --border-radius: 14px !important;
+  --color: #ffffff !important;
+  --border-color: rgba(255, 255, 255, 0.1) !important;
+  --background: rgba(255, 255, 255, 0.02) !important;
+  font-weight: 700 !important;
+  height: 48px;
+  transition: all 0.2s ease;
+}
+
+.file-picker-btn:hover {
+  --background: rgba(255, 255, 255, 0.05) !important;
+  --border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Import form container */
+.import-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.import-input-item {
+  --background: rgba(15, 22, 42, 0.6) !important;
+  --border-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px !important;
+  --padding-start: 14px !important;
+  height: 50px;
+}
+
+.import-input-item ion-input {
+  --color: #ffffff !important;
+}
+
+.import-toggle-item {
+  --background: transparent;
+  --color: #ffffff;
+  --padding-start: 0px;
+}
+
+.import-toggle-item ion-label {
+  font-size: 0.85rem !important;
+  color: #94a3b8 !important;
+}
+
+.settings-btn-success {
+  margin: 8px 0 0 0;
+  --background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  --border-radius: 14px !important;
+  font-weight: 750 !important;
+  height: 48px;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
+  transition: all 0.25s ease;
+}
+
+.settings-btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.45);
+}
+
+/* Sessions management */
+.session-list-container {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.session-card-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: rgba(15, 22, 42, 0.55);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.session-card-item:hover {
+  background: rgba(22, 30, 59, 0.65);
+}
+
+.session-device-name {
+  color: #e8ecf2;
+  font-weight: 750;
+  font-size: 0.88rem;
+  letter-spacing: -0.1px;
+}
+
+.session-metadata {
+  color: #7b8499;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  font-weight: 550;
+}
+
+.session-revoke-btn {
+  --padding-start: 8px !important;
+  --padding-end: 8px !important;
+  font-weight: 750 !important;
+  font-size: 0.8rem !important;
+  transition: all 0.2s ease;
+}
+
+.session-revoke-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Wipe alert box */
+.settings-wipe-input-item {
+  --background: rgba(239, 68, 68, 0.04) !important;
+  --border-color: rgba(239, 68, 68, 0.15) !important;
+  border: 1px solid rgba(239, 68, 68, 0.15);
+  border-radius: 14px !important;
+  --padding-start: 14px !important;
+  height: 50px;
+}
+
+.settings-wipe-input-item ion-input {
+  --color: #ffffff !important;
+}
+
+.settings-btn-danger {
+  margin: 8px 0 0 0;
+  --background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%) !important;
+  --border-radius: 14px !important;
+  font-weight: 750 !important;
+  height: 48px;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.25);
+  transition: all 0.25s ease;
+}
+
+.settings-btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.45);
+}

@@ -1,0 +1,292 @@
+/* ============================================
+   EDUCATION PAGE - Security Knowledge Center
+   ============================================ */
+
+.education-page {
+  --background: transparent;
+}
+
+.education-toolbar {
+  --background: transparent;
+  --color: #e8ecf2;
+}
+
+.education-title {
+  font-weight: 900 !important;
+  font-size: 1.4rem !important;
+  background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-content {
+  --background: transparent;
+}
+
+.education-header-container {
+  padding: 16px 16px 0;
+}
+
+/* Custom Segment */
+.education-segment {
+  --background: rgba(15, 22, 42, 0.65) !important;
+  border-radius: 16px !important;
+  padding: 4px !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+.education-segment-btn {
+  --indicator-color: #3b82f6 !important;
+  --color-checked: #ffffff !important;
+  --color: #94a3b8 !important;
+  --border-radius: 12px !important;
+  transition: all 0.2s ease;
+}
+
+.education-segment-btn ion-label {
+  font-size: 0.82rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1px;
+}
+
+.education-tab-container {
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Tip Cards */
+.tip-card {
+  background: rgba(13, 18, 36, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 20px !important;
+  margin: 0 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.25s ease !important;
+}
+
+.tip-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35) !important;
+}
+
+.tip-card-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px !important;
+}
+
+.tip-icon-wrapper {
+  border-radius: 14px;
+  padding: 12px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tip-title {
+  color: #f1f5f9;
+  font-weight: 800;
+  margin: 0 0 6px;
+  font-size: 1.05rem;
+  letter-spacing: -0.2px;
+}
+
+.tip-desc {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+/* Anti-Phishing Section */
+.phishing-card {
+  background: rgba(13, 18, 36, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 24px !important;
+  margin: 0 !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.phishing-input-item {
+  --background: rgba(15, 22, 42, 0.6) !important;
+  --border-color: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px !important;
+  margin-bottom: 16px !important;
+  --padding-start: 14px !important;
+  height: 50px;
+  transition: all 0.2s ease;
+}
+
+.phishing-input-item:focus-within {
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.12);
+}
+
+.phishing-input-item ion-input {
+  --color: #ffffff !important;
+  font-size: 0.92rem;
+}
+
+.phishing-result-card {
+  border-radius: 20px !important;
+  margin: 0 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  transition: all 0.3s ease;
+}
+
+.phishing-result-card.safe {
+  background: rgba(16, 185, 129, 0.08) !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.08) !important;
+}
+
+.phishing-result-card.unsafe {
+  background: rgba(239, 68, 68, 0.08) !important;
+  border: 1px solid rgba(239, 68, 68, 0.25) !important;
+  box-shadow: 0 8px 30px rgba(239, 68, 68, 0.08) !important;
+}
+
+.phishing-warning-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+
+.phishing-warning-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Quiz Section */
+.quiz-card {
+  background: rgba(13, 18, 36, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 24px !important;
+  margin: 0 !important;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.quiz-header-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.quiz-progress-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  border-radius: 3px;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+}
+
+.quiz-question {
+  color: #f1f5f9;
+  font-weight: 850;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+}
+
+.quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quiz-option-btn {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-option-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.quiz-option-btn.correct {
+  background: rgba(16, 185, 129, 0.14) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.15);
+}
+
+.quiz-option-btn.correct span {
+  color: #34d399 !important;
+  font-weight: 750 !important;
+}
+
+.quiz-option-btn.incorrect {
+  background: rgba(239, 68, 68, 0.14) !important;
+  border: 1px solid rgba(239, 68, 68, 0.4) !important;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.15);
+}
+
+.quiz-option-btn.incorrect span {
+  color: #fca5a5 !important;
+  font-weight: 700 !important;
+}
+
+.quiz-option-btn.disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.quiz-option-btn.disabled:hover {
+  transform: none;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.quiz-option-btn span {
+  color: #e2e8f0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.quiz-explanation-box {
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.03);
+}
+
+.quiz-explanation-box p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.88rem;
+  margin: 0;
+  line-height: 1.55;
+  font-weight: 500;
+}
