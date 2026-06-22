@@ -242,7 +242,11 @@ const Home: React.FC = () => {
             </IonButton>
           </IonCardContent>
         </IonCard>
-
+        
+      <IonButton expand="block" fill="outline" color="danger" onClick={logout} className="btn-action-danger" style={{ marginTop: '10px' }}>
+              <IonIcon slot="start" icon={logOutOutline} />
+              Sair da Conta
+            </IonButton>
         {/* CARD 2: CONFIGURAÇÃO DE PIN LOCAL (HOT RE-ENTRY) */}
         <IonCard className="premium-card">
           <IonCardContent className="premium-card-content">
